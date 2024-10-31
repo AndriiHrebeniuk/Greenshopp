@@ -6,37 +6,44 @@
     <title>Greenshop</title>
 
     <link rel="stylesheet" href="./css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./fonts/font.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="/"
         ><img class="header_logo" src="./img/Logo.svg" alt="Greenshop"
       /></a>
-      <nav>
+      <nav class="header_nav">
         <ul>
-          <li><a class="activ_item" href="">Home</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Plant Care</a></li>
-          <li><a href="">Blogs</a></li>
+          <li class="link_Home header_list">
+            <a class="header_link" href="">Home</a>
+          </li>
+          <li class="link_Shop header_list">
+            <a class="header_link" href="">Shop</a>
+          </li>
+          <li class="link_PlantCare header_list">
+            <a class="header_link" href="">Plant Care</a>
+          </li>
+          <li class="link_Blogs header_list">
+            <a class="header_link" href="">Blogs</a>
+          </li>
         </ul>
       </nav>
       <button class="header_button">
-        <img class="button_image" src="./img/Logout.svg" alt="" />Login
+        <img class="button_image" src="./img/Logout.svg" alt="" /><span
+          class="login_button"
+          >Login</span
+        >
       </button>
     </header>
 
-    <main>
+    <main class="first_content">
       <section>
-        <div class="main_text">
-          <p class="first_main_text">Welcome to GreenShop</p>
-          <h1>Let’s Make a Better <span>Planet</span></h1>
+        <div class="main_text_first">
+          <p class="first_paragraph">Welcome to GreenShop</p>
+          <h1 class="first_main_text">
+            Let’s Make a Better <span>Planet</span>
+          </h1>
           <p class="second_main_text">
             We are an online plant shop offering a wide range of cheap and
             trendy plants. Use our plants to create an unique Urban Jungle.
@@ -44,11 +51,480 @@
           </p>
           <button class="main_button">SHOP NOW</button>
         </div>
-        <div class="img_container">
+        <div class="img_container_first">
           <a href="/"
             ><img class="main_img" src="./img/main_img.png" alt="Flower"
           /></a>
         </div>
+      </section>
+    </main>
+
+    <div class="container clear-float">
+      <aside class="sidebar clear-float">
+        <h2 class="categories">Categories</h2>
+        <nav class="sidebar_nav">
+          <ul>
+            <li>
+              <a class="sidebar_list" href="#">House Plants</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Potter Plants</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Seeds</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Small Plants</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Big Plants</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Succulents</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Terrariums</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Gardening</a>
+            </li>
+            <li>
+              <a class="sidebar_list" href="#">Accessories</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="clear-float" href="#"
+          ><img
+            class="sidebar_img"
+            src="./img/Super_Sale_Banner.png"
+            alt="Super_Sale"
+        /></a>
+      </aside>
+
+      <main class="main_container">
+        <section class="main_header clear-float">
+          <div class="tabs clear-float">
+            <a class="main_tabs" href="#">All Plants</a>
+            <a class="main_tabs" href="#">New Arrivals</a>
+            <a class="main_tabs" href="#">Sale</a>
+          </div>
+          <div class="sort clear-float">
+            <p class="sort_text">Short by:</p>
+            <select class="sort_choice">
+              <option>None</option>
+              <option>Price (Low - High)</option>
+              <option>Newest</option>
+              <option>Top sellers</option>
+              <option>Price (High - Low)</option>
+            </select>
+          </div>
+        </section>
+        <section class="article_section clear-float">
+          <article class="first_line_product_item product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image1.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Barberton Daisy</h3>
+                <p class="item_product_price">$119.00</p>
+              </div></a
+            >
+          </article>
+
+          <article class="first_line_product_item product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image2.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Angel Wing Begonia</h3>
+                <p class="item_product_price">$169.00</p>
+              </div></a
+            >
+          </article>
+
+          <article
+            class="first_line_product_item third_product_item product_item clear-float"
+          >
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image3.png" alt="" />
+                <div class="sale_text"><h2>13% OFF</h2></div>
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">African Violet</h3>
+                <p class="item_product_price">
+                  $199.00 <span class="price_without_sale">$229.00</span>
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image4.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Beach Spider Lily</h3>
+                <p class="item_product_price">$129.00</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image5.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Blushing Bromeliad</h3>
+                <p class="item_product_price">$139.00</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="third_product_item product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image6.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Aluminum Plant</h3>
+                <p class="item_product_price">$179.00</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image7.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Bird's Nest Fern</h3>
+                <p class="item_product_price">$99.00</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image8.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Broadleaf Lady Palm</h3>
+                <p class="item_product_price">$59.00</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="third_product_item product_item clear-float">
+            <a class="article_link" href="#">
+              <div class="product_item_head">
+                <img src="./img/image9.png" alt="" />
+                <div class="img_container">
+                  <div class="first_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="second_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="third_hover_img">
+                    <img
+                      class="hover_img_position"
+                      src="./img/Vector2.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_body">
+                <h3 class="flower_name">Chinese Evergreen</h3>
+                <p class="item_product_price">$39.00</p>
+              </div>
+            </a>
+          </article>
+        </section>
+
+        <button class="last_page nav_button">
+          <img src="./img/arrow_right.svg" alt=">" />
+        </button>
+        <button class="nav_button">4</button>
+        <button class="nav_button">3</button>
+        <button class="nav_button">2</button>
+        <button class="nav_button">1</button>
+      </main>
+    </div>
+
+    <header class="second_content">
+      <div class="header_container first_header_container">
+        <img class="header_img" src="./img/flower_1.png" alt="Flower" />
+        <h2 class="overview">Summer cactus & succulents</h2>
+        <p class="overview_text">
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants
+        </p>
+        <button class="find_more">
+          Find more <img src="./img/arrow_right.svg" alt="→" />
+        </button>
+      </div>
+
+      <div class="header_container">
+        <img class="header_img" src="./img/flower_2.png" alt="Flower" />
+        <h2 class="overview">Styling Trends & much more</h2>
+        <p class="overview_text">
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants
+        </p>
+        <button class="find_more">
+          Find more <img src="./img/arrow_right.svg" alt="→" />
+        </button>
+      </div>
+    </header>
+
+    <main class="container_article">
+      <div class="main_container_final">
+        <h1 class="big_main_text">Our Blog Posts</h1>
+        <p class="main_text">
+          We are an online plant shop offering a wide range of cheap and trendy
+          plants.
+        </p>
+      </div>
+      <section class="section_article">
+        <article class="article_container">
+          <img src="./img/first_main_img.png" alt="flower" />
+          <p class="article_text">September 12 I Read in 6 minutes</p>
+          <h2 class="article_title">Cactus & Succulent Care Tips</h2>
+          <p class="second_article_text">
+            Cacti are succulents are easy care plants for any home or patio.
+          </p>
+          <a class="read_more_link" href="#">Read More →</a>
+        </article>
+
+        <article class="article_container">
+          <img src="./img/second_main_img.png" alt="flower" />
+          <p class="article_text">September 13 I Read in 2 minutes</p>
+          <h2 class="article_title">Top 10 Succulents for Your Home</h2>
+          <p class="second_article_text">
+            Best in hanging baskets. Prefers medium to high light.
+          </p>
+          <a class="read_more_link" href="#">Read More →</a>
+        </article>
+
+        <article class="article_container">
+          <img src="./img/third_main_img.png" alt="flower" />
+          <p class="article_text">September 15 I Read in 3 minutes</p>
+          <h2 class="article_title">Cacti & Succulent Care Tips</h2>
+          <p class="second_article_text">
+            Cacti and succulents thrive in containers and because most are..
+          </p>
+          <a class="read_more_link" href="#">Read More →</a>
+        </article>
+
+        <article class="article_container">
+          <img src="./img/fourth_main_img.png" alt="flower" />
+          <p class="article_text">September 15 I Read in 2 minutes</p>
+          <h2 class="article_title">Best Houseplants Room by Room</h2>
+          <p class="second_article_text">
+            The benefits of houseplants are endless. In addition to..
+          </p>
+          <a class="read_more_link" href="#">Read More →</a>
+        </article>
       </section>
     </main>
   </body>
