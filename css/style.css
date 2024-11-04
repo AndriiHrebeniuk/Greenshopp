@@ -149,7 +149,7 @@ body {
     text-align: center
 }
 
-.header_nav ul li a:hover {
+.header_link:hover {
     font-size: 16px;
     font-weight: 700;
     line-height: 20.11px;
@@ -785,4 +785,7 @@ nav ul li ul ul {
     top: 15px;
         right: -179px;
         padding-left: 2px;
+}
+.link_size {
+    display: block;
 }
