@@ -164,6 +164,7 @@ body {
     font-weight: 400;
     line-height: 20.11px;
     padding: 0px 25px;
+        position: relative;
 }
 
 .header_link {
@@ -709,4 +710,79 @@ body {
 
 .article_container {
     background: #FBFBFB;
+}
+
+.drop_down_menu_text {
+    min-height: 35px;
+    padding-left: 14px;
+    color: #3D3D3D;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+.active_drop_down_text:hover {
+    color: #FFFFFF;
+    background: #1A712A;
+    font-family: ;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.drop_down_menu_text_first {
+    padding-top: 7px;
+}
+
+
+
+
+nav ul .drop_down_menu {
+    display: none;
+}
+
+nav ul li:hover > .drop_down_menu {
+    display: block;
+}
+
+nav ul li ul {
+    background: #EDF6EE;
+}
+
+.drop_down_img {
+    position: absolute;
+    left: 165px;
+    bottom: 15px;
+}
+.drop_down_menu {
+    padding-top: 15px;
+    position: absolute;
+    text-align: left;
+    min-width: 188px;
+    min-height: 143px;
+    top: 41px;
+    left: -30px;
+}
+
+nav ul ul .second_drop_down_menu {
+    display: none;
+}
+
+nav ul ul li:hover>.second_drop_down_menu {
+    display: block;
+}
+
+nav ul li ul ul {
+    background: #EDF6EE;
+    
+}
+
+.second_drop_down_menu {
+    position: absolute;
+    text-align: left;
+    min-width: 178px;
+    min-height: 215px;
+    top: 15px;
+        right: -179px;
+        padding-left: 2px;
 }
