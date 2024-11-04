@@ -717,6 +717,7 @@ body {
     padding-left: 14px;
     color: #3D3D3D;
     font-weight: 400;
+    font-family: "Encode Sans", serif;
     font-size: 16px;
     padding-top: 10px;
     text-decoration: none;
@@ -725,7 +726,7 @@ body {
 .active_drop_down_text:hover {
     color: #FFFFFF;
     background: #1A712A;
-    font-family: ;
+    font-family: "Encode Sans", serif;
     font-weight: 700;
     font-size: 16px;
 }
