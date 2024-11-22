@@ -302,9 +302,11 @@ body {
     font-size: 0px;
     width: 100%;
     max-width: 1229px;
-    max-height: 450px;
     margin: 0 auto;
     background: #F5F5F580;
+        display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
     margin-top: 12px;
     margin-bottom: 46px;
 }
@@ -315,10 +317,14 @@ body {
 }
 
 .main_text_first {
-    width: 653px;
-    height: 100%;
-    display: inline-block;
-    margin: 70px 0px 0px 43px;
+        width: 100%;
+            max-width: 653px;
+}
+.main_info_container {
+        padding: 40px;
+        display: flex;
+            justify-content: center;
+            align-items: center;
 }
 
 .first_paragraph {
@@ -347,7 +353,8 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: #727272;
-    width: 557px;
+    width: 100%;
+        max-width: 557px;
     height: 45px;
     padding-bottom: 70px;
 }
@@ -358,9 +365,8 @@ body {
 }
 
 .main_img {
-    width: 507px;
-    height: 450px;
-}
+        width: 100%;
+            max-width: 507px;}
 
 .main_button {
     position: relative;
@@ -374,7 +380,6 @@ body {
     font-weight: 700;
     line-height: 20px;
     color: #FFFFFF;
-    margin: 0 auto;
     cursor: pointer;
 }
 .main_button:before {
@@ -445,6 +450,7 @@ body {
 }
 
 .main_container {
+    padding: 10px;
     width: calc(100% - 360px);
     float: right;
 }
@@ -570,9 +576,7 @@ body {
     float: left;
     width: 258px;
     height: 350px;
-    margin-right: 47px;
-    margin-bottom: 12px;
-    margin-top: 63px
+
 }
 
 .third_product_item {
@@ -621,6 +625,10 @@ body {
 
 .article_section {
     padding-top: 27px;
+    display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
 }
 
 .first_line_product_item {
@@ -740,7 +748,7 @@ body {
 }
 
 .first_header_container {
-    margin-right: 32px;
+    margin-right: 24px;
 }
 
 .big_main_text {
@@ -1061,7 +1069,6 @@ footer article img {
     padding-top: 27px;
 }
 .footer_info_container {
-    height: 236px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #46A35833;
@@ -1103,6 +1110,12 @@ footer article img {
         line-height: 16px;
         color: #3D3D3D;
 }
+
+.email_input_container {
+    width: 100%;
+    max-width: 354px;
+}
+
 .my_account {
     margin-left: 25px;
 }
@@ -1137,7 +1150,6 @@ margin-left: 7px;
 
 .footer_background {
     width: 100%;
-    height: 250px;
         background: #FBFBFB;
 }
 
@@ -1176,5 +1188,100 @@ margin-left: 7px;
 
     position: relative;
     z-index: 1;
+
+}
+
+@media (max-width: 1200px){
+.first_header_container {
+        margin-right: 0px;
+    }
+    .phone {
+        left: 1038px
+    }
+        .phone,
+        .mail,
+        .location {
+            display: none;
+        }
+            .section_article {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+                    gap: 10px;
+        }
+    .header_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+        .main_info_container {
+                flex-wrap: wrap;
+            }
+
+        .second_content {
+            display: flex;
+                flex-wrap: wrap;
+                    justify-content: center;
+        }
+    .sidebar,.sidebar_img {
+        display: none ;
+    }
+    .footer_container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .container {
+            display: flex;
+                justify-content: center;
+    }
+    .footer_main_container {
+        padding-top: 180px;
+    }
+    .footer_main_container {
+        height: auto;
+    }
+    .sort {
+        display: none;
+    }
+    .main_header {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+        .article_section {
+            justify-content: center;
+        }
+}
+
+@media (max-width: 768px) {
+    .email_input {
+            width: 187px;
+    }
+    .input_button {
+        left: 179px;
+    }
+    .main_header {
+        display: none;
+    }
+    .nav_button {
+        min-width: 25px;
+    }
+    .my_account {
+        display: none;
+    }
+        .container_social_media {
+            margin-right: 10px;
+}
+.footer_location {
+    display: none;
+}
+.header_list {
+    padding: 0px 5px;
+}
+.footer_info_container{
+padding: 10px;
+}
 
 }

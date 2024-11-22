@@ -117,7 +117,7 @@
       </header>
 
       <main class="first_content">
-        <section>
+        <section class="main_info_container">
           <div class="main_text_first">
             <p class="first_paragraph">Welcome to GreenShop</p>
             <h1 class="first_main_text">
@@ -766,15 +766,17 @@
             </article>
             <article class="footer_email_input">
               <h2>Would you like to join newsletters?</h2>
-              <form action="#" method="post">
-                <input
-                  class="email_input"
-                  type="email"
-                  placeholder="enter your email address..."
-                  name="login"
-                />
-                <input class="input_button" type="button" value="Join" />
-              </form>
+              <div class="email_input_container">
+                <form action="#" method="post">
+                  <input
+                    class="email_input"
+                    type="email"
+                    placeholder="enter your email address..."
+                    name="login"
+                  />
+                  <input class="input_button" type="button" value="Join" />
+                </form>
+              </div>
 
               <p class="paragraph_after_email">
                 We usually post offers and challenges in newsletter. We’re your
@@ -784,24 +786,26 @@
               </p>
             </article>
           </section>
-          <div class="footer_rgb_background"></div>
-          <section class="footer_content">
-            <a href="#"
-              ><img class="footer_logo" src="./img/Logo.svg" alt=""
-            /></a>
-            <article class="footer_location">
-              <img class="location" src="./img/location.svg" alt="" />
-              <p>70 West Buckingham Ave. Farmingdale, NY 11735</p>
-            </article>
-            <article class="footer_email">
-              <img class="mail" src="./img/mail.svg" alt="" />
-              <a href="mailto:contact@greenshop.com">contact@greenshop.com</a>
-            </article>
-            <article class="footer_phone">
-              <img class="phone" src="./img/Phone.svg" alt="" />
-              <a href="tel:+8801911717490">+88 01911 717 490</a>
-            </article>
-          </section>
+          <div class="footer_main_container">
+            <div class="footer_rgb_background"></div>
+            <section class="footer_content">
+              <a href="#"
+                ><img class="footer_logo" src="./img/Logo.svg" alt=""
+              /></a>
+              <article class="footer_location">
+                <img class="location" src="./img/location.svg" alt="" />
+                <p>70 West Buckingham Ave. Farmingdale, NY 11735</p>
+              </article>
+              <article class="footer_email">
+                <img class="mail" src="./img/mail.svg" alt="" />
+                <a href="mailto:contact@greenshop.com">contact@greenshop.com</a>
+              </article>
+              <article class="footer_phone">
+                <img class="phone" src="./img/Phone.svg" alt="" />
+                <a href="tel:+8801911717490">+88 01911 717 490</a>
+              </article>
+            </section>
+          </div>
           <div class="footer_second_background"></div>
           <section class="footer_info_container">
             <ul class="my_account">
@@ -812,7 +816,7 @@
               <li><a class="footer_list" href="#">Career</a></li>
               <li><a class="footer_list" href="#">Specials</a></li>
             </ul>
-            <ul>
+            <ul class="help_and_guide">
               <li>
                 <h2>Help & Guide</h2>
               </li>
